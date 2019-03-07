@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/formulario.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="formulario">
+        <form action="#" id="formRegister" onsubmit="metFormulariovalFormCompleto()">
+            <p>
+                <i class="fas fa-user-alt icon"></i>
+                <input class="validar" placeholder="Ingrese nombre dos caracteres, màximo 6.Caracteres alfabeticos" id="name" type="text">
+                <label for="name"> 
+                    <span class="obligatorio">*Campo Obligatorio</span>
+                </label>
+            </p>
+            <p>
+                <i class="fas fa-file-signature icon"></i>
+                <input class="validar"  type="password" placeholder="Escriba su contraseña con minimo 8 caracteres y debe incluir letras mayusculas" id="age">
+                <label for="password">
+                    <span class="obligatorio">*Campo Obligatorio</span> 
+                </label>
+            </p>
+            <p>
+                <i class="fas fa-birthday-cake icon"></i>
+                <input class="validar" type="number" placeholder="Ingrese la edad" id="age">
+                <label for="age"><span class="obligatorio">*Campo Obligatorio</span></label>
+            </p>
+            <p>
+                <i class="fas fa-birthday-cake icon"></i>
+                <input class="validar" type="date" id="dateini">
+                <label for="dateini">
+                    <span class="obligatorio">*Campo Obligatorio</span>
+                </label>
+            </p>
+            <p>
+                <label id="labelEnviar"></label>
+                <button type="submit"><i class="fas fa-birthday-cake icon"></i>Enviar</button>
+            </p>
+        </form>
+    </div>
+    <script src="js/validacion.js"></script>
+</body>
+</html>

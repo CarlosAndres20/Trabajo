@@ -1,21 +1,26 @@
 console.log(document);
 console.log(document.body);
 console.log(document.body.header);
+
 // console.log(document.querySelector('header'));
 var header=document.querySelector('header')
 console.log(`document.querySelector('.barra nav')`);
 console.log(`$(header)`);
+
 var siteHeader=document.querySelector('.siteHeader');
 console.log(`$(.siteHeader)`);
 console.log('1');
+
 (function () {
   'use strict'
   document.addEventListener('DOMContenedor',function(){
       console.log('2');
   })  
 })();
+
 console.log('3');
 document.getElementById('barra');
+
 var barra= document.getElementById('barra');
 console.log(barra);
 //Permite conocer si tiene un atributo llamado clase

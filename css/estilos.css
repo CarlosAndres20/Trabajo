@@ -3,13 +3,16 @@
     padding: 0px;
     box-sizing: border-box;
 }
+/* Separando  el header de la parte superior*/
 .siteHeader{
     padding: 20px 0;
 }
+/* Centrando la pagina principal asi como el maximo ancho */
 .contenedor{
     max-width: 1200px;
     margin: 0 auto;
 }
+/* Quitar flote*/
 .clearfix::after{
     content: '';
     clear: both;

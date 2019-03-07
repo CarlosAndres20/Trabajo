@@ -1,0 +1,41 @@
+form{
+    font-size: 36px;
+    margin: 20px;
+}
+input{
+    margin-left: 10px;
+    font-size: 32px;
+    width: 3­00px;
+    border-bottom: 3px solid crimson;
+    border-top: 0 #FFF solid;
+    -webkit-transition: width .35s ease-in-out;
+    transition:  width .35s ease-in-out;
+}
+button{
+    padding:20px; 
+    border-radius:10px ;
+    margin-left:10px ;
+    font-size:32px ;
+    width:300px ;
+}
+input[type=text]:focus{
+    width: 350px;
+    border-bottom: 8px solid rgb(220,20,60,0.48);
+    outline: 0px;
+}
+.icon{
+    color:  rgb(220,20,60,0.48);
+}
+#resultado{
+    border: 8px dotted  rgb(220,20,60,0.48);
+    width: 400px;
+    height: 500px;
+    float: left;
+}
+#formulario{
+    float: left;
+}
+#formulario label span.obligatorio{
+    display: none;
+    color: #777;
+}
