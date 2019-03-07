@@ -3,7 +3,10 @@
  --------------------------------------------------------------------------*/
 var ProCal={
     teclado:document.querySelectorAll('#calculadora ul li'),
-    accion:null
+    accion:null,
+    operaciones:document.querySelectorAll('#operaciones'),
+    digito:0,
+    cantidadSigno:0
 
 };
 /**-------------------------------------------------------------------------
@@ -20,14 +23,28 @@ var ProCal={
         console.log(tecla);
         ProCal.accion=tecla.target.getAttribute('class');
         console.log(ProCal.accion);
-        medCal.calculadora(ProCal.accion);
+        ProCal.digito=tecla.target.innerHTML;
+        console.log(ProCal.digito);
+        medCal.calculadora(ProCal.accion,ProCal.digito);
     },
-    calculadora:function(accion){
+    calculadora:function(accion,digito){
         switch (accion) {
             case'numero' :
+                ProCal.cantidadSigno==0;
+                if (ProCal.operaciones.innerHTML===0) {
+                    ProCal.operaciones.innerHTML=digito;
+                }
                 console.log(accion);
+                ProCal.operaciones.innerHTML+=digito;
                 break;
             case 'signo':
+                ProCal.cantidadSigno++;
+                if (ProCal.cantidadSigno==1) {
+                    ProCal.operaciones.innerHTML+=digito;
+                }
+                if (ProCal.cantidadSigno==1) {
+                    ProCal.cantidadSigno==0;
+                }
                 console.log(accion);
                 break;
             case 'decimal':
@@ -39,6 +56,9 @@ var ProCal={
             default:
                 break;
         }
+    },
+    borrar:function () {
+        ProCal.operaciones.innerHTML===0;
     }
  }
  medCal.inicio();
