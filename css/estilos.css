@@ -1,0 +1,246 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.siteHeader{
+    padding: 20px 0;
+}
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.barra{
+    margin-top: 40px;
+    background-color: #ffffff;
+}
+.navegacionPrincipal a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+@media(min-width:768px){
+    .navegacionPrincipal a{
+        display: inline-block;
+    }
+}
+.contenedorPrincipal{
+   margin-top: 40px; 
+    /* margin: 20px 0 20px 6%  ; 
+    width:800px;
+    float:left;
+    background:orange;
+    padding-right:60px;
+    */
+}
+.contenedorPrincipal,.sidebar{
+    padding: 20px;
+    /* width: 400px;
+    float: rigth;
+    background:green; */
+}
+@media(min-width:760px){
+    .contenedorPrincipal{
+        width: 70%;
+        float: left;
+        padding: 0 60px 0 0;
+    }
+    .sidebar{
+        width: 30%;
+        float: right;
+        padding: 0;
+        margin-top: 40px;
+    }
+}
+h2{
+    color: #00B8E4;
+    margin-bottom: 20px;
+}
+.entrada img{
+    display: block;
+}
+@media(min-width:480px){
+    .entrada img{
+        width: 300px;
+        float: left;
+        margin: 0 30px 0 0;
+    }
+}
+.entrada p{
+    text-align: justify;
+}
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li{
+    padding: 10px;
+}
+.sidebar ul li a{
+    color: #00B8E4;
+    font-size: 18px;
+    text-decoration: none;
+}
+.sidebar ul li:hover a{
+    color: #ffffff;
+}
+
+#nav{
+    background-color:rgb(255, 0, 119);
+}
+/* #nav a{
+    color: white;       
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 auto;
+    margin: 2% 0% 0% 6%;
+} */
+/* .entrada p{
+    float: right;
+    font-size: 20px;
+} */
+.boton{
+    background-color: #00B8E4;
+    padding: 0.2%;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;  
+    color: white;
+    background-color: rgb(0, 98, 255);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    transition:  background-color .3s ease-in-out;
+    /* margin: 10% 0% 10% 1%; */
+}
+.boton:hover{
+    background-color: rgb(0,131,164);
+}
+.entrada{
+    margin-bottom: 60px;
+}
+.entrada:last-of-type{
+    margin-bottom: 0;
+}
+
+/* 
+article .entrada p{
+    float: right;
+}
+.otrasEntadas h2{
+    float: right;
+}
+.sidebar a{
+    float: right;
+    text-decoration: none;
+    list-style: none;
+} */
+.footerSitio {
+    background-color:#DB008D;
+    /* float: left; */
+    color: white;
+    padding-top: 40px;
+    margin-top: 60px;
+    text-align: center;
+}
+.footerSitio h2{
+    color: #ffffff;
+}
+.footerSitio a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+@media(min-width:768px){
+    .footerSitio .nosotros{
+        float: left;
+        width: 30%;
+        text-align: left;
+    }
+    .footerSitio .menu{
+        float: right;
+        width: 50%;
+        text-align: right;
+    }
+}
+.footerSitio a:last-of-type{
+    margin-right: 0;
+}
+/* 
+footer div .nosotros  {
+    float: left;
+}
+footer .menu{
+    text-decoration: none;
+    float: right;
+    color: white;
+}
+footer nav a{
+    text-decoration: none;
+    float: right;
+    color: white;
+    margin: 0px 35% 0% 0%;
+    text-align: left;
+} */
+.copyright{
+    background-color:#DB008D;
+    /* color: white; */
+    margin: 50px 0 0 0;
+    padding: 20px 0;
+}
+html{
+    box-sizing: border-box;
+}
+*,*::before,*:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Imagenes responsivas */
+img{
+    max-width: 100%;
+}
+/* Estilos de parrafo 10*/
+p{
+    font-size: 16px;
+    line-height: 2;
+}
+/* Botones */
+.barra{
+    overflow: hidden;
+}
+.movileMenu{
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    padding: 20px 0;
+}
+#nav:target{
+    max-height: 800px;
+}
+.navegacionPrincipal{
+    max-height: 0;
+    transition: .5s;
+}
+@media(min-width:768px){
+    .navegacionPrincipal{
+        max-height: unset;
+    }
+    .movileMenu,
+    .cerrar{
+        display: none !important;
+    }
+}
+/*  */
